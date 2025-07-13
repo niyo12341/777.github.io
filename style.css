@@ -1,0 +1,30 @@
+
+/* style.css: Mobile-friendly scaling for pdf2htmlEX content */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.pf {
+  width: 100% !important;
+  max-width: 100%;
+  height: auto !important;
+  transform: scale(1) !important;
+  transform-origin: top left;
+}
+
+/* Scale down for tablets */
+@media (max-width: 768px) {
+  .pf {
+    transform: scale(0.6);
+  }
+}
+
+/* Scale down further for phones */
+@media (max-width: 480px) {
+  .pf {
+    transform: scale(0.45);
+  }
+}
